@@ -395,3 +395,31 @@ body {
     justify-content: space-between;
     
     }
+    header {
+        grid-area:header ;
+    }
+nav{
+    grid-area:nav ;
+}
+#intro{
+    grid-area: intro;
+}
+#main-section{
+    grid-area: main-section;
+}
+#bestsellers{
+grid-area: bestseller;
+}
+footer{
+    grid-area:footer ;
+}
+
+.grid-containe{
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+grid-template-areas:"header header header header intro" 
+"nav nav nav nav intro"
+"main-section  main-section main-section main-section bestseller"
+"footer footer footer footer footer"
+;
+} 
