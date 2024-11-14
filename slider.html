@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <img src="pexels-photo-2465877.jpeg" alt="" class="slides">
+        <img src="pupy.jfif" alt="" class="slides">
+        <img src="rabit.jfif" alt="" class="slides">
+        <img src="Book.jfif" alt="" class="slides">
+        <script>
+          var myIndex = 0;
+
+carousel()
+
+function carousel(){
+
+var i;
+
+var x = document.getElementsByClassName("slides");
+
+for(i =0; i < x.length; i++){
+
+x[i].style.display= 'none'
+
+}
+
+myIndex++
+
+if(myIndex > x.length){ myIndex = 1}
+
+x[myIndex-1].style.display = 'block';
+
+setTimeout(carousel,3000)
+
+}  
+        </script>
+    </section>
+</body>
+</html>
